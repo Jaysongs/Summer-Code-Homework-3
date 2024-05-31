@@ -1,0 +1,84 @@
+.upcomingEvents {
+  height: 320px;
+  background-color: #540d6e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0 40px;
+}
+.upcomingEvents .title {
+  margin-top: -30px;
+  width: 392px;
+  border-bottom: solid white 2px;
+  height: 35px;
+  padding-bottom: 20px;
+  color: white;
+  font-size: 25px;
+  font-weight: 100;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.upcomingEvents .events {
+  margin-top: -100px;
+  height: 124px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.upcomingEvents .events .event {
+  width: 210px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.upcomingEvents .events .event .date {
+  width: 60px;
+  height: 60px;
+  background-color: #ee4367;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+}
+.upcomingEvents .events .event .date .numb {
+  font-family: gillSansReg;
+  font-size: 20px;
+}
+.upcomingEvents .events .event .date .month {
+  font-family: thinn;
+  font-size: 12px;
+}
+.upcomingEvents .events .event .details {
+  width: 140px;
+  font-family: gillSansReg;
+}
+.upcomingEvents .events .event .details .top {
+  font-size: 15px;
+  color: white;
+}
+.upcomingEvents .events .event .details .bottom {
+  font-size: 13px;
+  color: #ee4367;
+}

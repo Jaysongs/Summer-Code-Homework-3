@@ -1,0 +1,338 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-bottom: 16px;
+}
+
+@font-face {
+  font-family: gillSansReg;
+  src: url(fonts/GillSans.ttc);
+}
+@font-face {
+  font-family: thinn;
+  src: url(fonts/GillSansLight.otf);
+}
+.navWrapper {
+  height: 90px;
+  width: 100%;
+  position: fixed;
+}
+.navWrapper nav {
+  max-width: 980px;
+  height: 90px;
+  margin: 0 auto;
+  border-bottom: solid 2px white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.navWrapper nav .logo {
+  position: relative;
+  width: 92px;
+  height: 42px;
+  border: solid 2px white;
+}
+.navWrapper nav .logo span {
+  position: absolute;
+  bottom: -4px;
+  color: white;
+  font-family: gillSansReg;
+}
+.navWrapper nav .links {
+  width: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.navWrapper nav .links a {
+  text-decoration: none;
+  color: white;
+  font-family: gillSansReg;
+}
+.navWrapper nav .links span {
+  color: #ee4367;
+}
+
+@media only all and (max-width: 980px) {
+  .navWrapper nav {
+    padding: 0 30px;
+  }
+}
+.hero {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 209, 64, 0.85)), to(rgba(255, 209, 64, 0.85))), url(../images/home-hero.jpg);
+  background-image: linear-gradient(to bottom, rgba(255, 209, 64, 0.85), rgba(255, 209, 64, 0.85)), url(../images/home-hero.jpg);
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.hero .heroCont {
+  width: 300px;
+  height: 300px;
+  text-align: center;
+}
+.hero button {
+  background-color: #ee4367;
+  color: white;
+  padding: 10px;
+  border: none;
+}
+.hero .heroCont h1 {
+  color: white;
+  font-weight: 100;
+}
+.hero .heroText0 {
+  color: #ee4367;
+  font-family: gillSansReg;
+}
+.hero .heroText {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  color: white;
+  font-family: gillSansReg;
+}
+
+.quote {
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #ffd140;
+  font-family: gillSansReg;
+}
+.quote .content {
+  width: 789px;
+}
+.quote .author {
+  color: #ee4367;
+  margin-bottom: 0;
+}
+.quote .title {
+  font-size: 12px;
+  color: gray;
+}
+
+@media (max-width: 980px) {
+  .quote {
+    margin: 0 130px;
+  }
+}
+.upcomingEvents {
+  background-color: #540d6e;
+  padding: 40px;
+}
+.upcomingEvents .title {
+  width: 392px;
+  border-bottom: solid white 2px;
+  height: 35px;
+  padding-bottom: 20px;
+  color: white;
+  font-size: 25px;
+  font-weight: 100;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.upcomingEvents .events {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.upcomingEvents .events .event {
+  height: 124px;
+  width: 210px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.upcomingEvents .events .event .date {
+  width: 60px;
+  height: 60px;
+  background-color: #ee4367;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+}
+.upcomingEvents .events .event .date .numb {
+  font-family: gillSansReg;
+  font-size: 20px;
+}
+.upcomingEvents .events .event .date .month {
+  font-family: thinn;
+  font-size: 12px;
+}
+.upcomingEvents .events .event .details {
+  width: 140px;
+  font-family: gillSansReg;
+}
+.upcomingEvents .events .event .details .top {
+  font-size: 15px;
+  color: white;
+}
+.upcomingEvents .events .event .details .bottom {
+  font-size: 13px;
+  color: #ee4367;
+}
+
+@media (max-width: 1140px) {
+  .upcomingEvents .events {
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
+  }
+}
+.footer {
+  height: 455px;
+  background-color: #ee4367;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer .logo {
+  position: relative;
+  width: 92px;
+  height: 42px;
+  border: solid 2px white;
+  margin: 50px;
+  margin-left: 75px;
+}
+.footer .logo span {
+  position: absolute;
+  bottom: -3px;
+  color: white;
+  font-family: gillSansReg;
+}
+.footer .message {
+  color: white;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.footer .signUp {
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.footer .signUp input {
+  height: 100%;
+  width: 529px;
+  background-color: #f56b88;
+  border: none;
+  color: rgb(238, 67, 103);
+  padding-left: 15px;
+  font-size: 16px;
+}
+.footer .signUp ::-webkit-input-placeholder {
+  color: rgb(238, 67, 103);
+  opacity: 1;
+}
+.footer .signUp ::-moz-placeholder {
+  color: rgb(238, 67, 103);
+  opacity: 1;
+}
+.footer .signUp :-ms-input-placeholder {
+  color: rgb(238, 67, 103);
+  opacity: 1;
+}
+.footer .signUp ::-ms-input-placeholder {
+  color: rgb(238, 67, 103);
+  opacity: 1;
+}
+.footer .signUp ::placeholder {
+  color: rgb(238, 67, 103);
+  opacity: 1;
+}
+.footer .signUp .button {
+  height: 60px;
+  width: 167px;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: gillSansReg;
+  color: rgb(146, 136, 138);
+}
+.footer .media {
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer .copy {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+@media (max-width: 712px) {
+  .signUp {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}

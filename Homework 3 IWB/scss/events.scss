@@ -1,0 +1,77 @@
+.upcomingEvents {
+    background-color: #540d6e;
+    padding: 40px;
+
+    .title {
+        width: 392px;
+        border-bottom: solid white 2px;
+        height: 35px;
+        padding-bottom: 20px;
+        color: white;
+        font-size: 25px;
+        font-weight: 100;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    }
+   
+    .events {
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+
+        .event {
+            height: 124px;
+            width: 210px;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+
+
+            .date{
+                width: 60px;
+                height: 60px;
+                background-color: #ee4367;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                color: white;
+
+                .numb {
+                    font-family: gillSansReg;
+                    font-size: 20px;
+                }
+                .month {
+                    font-family: thinn;
+                    font-size: 12px;
+                }
+
+            }
+            .details {
+                width: 140px;
+                font-family: gillSansReg;
+
+                .top {
+                    font-size: 15px;
+                    color: white;
+                }
+                .bottom {
+                    font-size: 13px;
+                    color: #ee4367;
+                }
+
+            }
+        }
+
+    }
+}
+
+@media (max-width: 1140px) {
+    .upcomingEvents {
+        .events {
+            flex-wrap: wrap-reverse;
+            .event {
+
+            }
+        }
+    }
+}
